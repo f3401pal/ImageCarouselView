@@ -15,7 +15,7 @@ Custom image carousel view for Android. Support featrures:
 
 # QuickStart
 This is a example of using Glide as image loader. See the example app for more details.
-1. Create a image loader class extend `ImageLoader` and implement `loadImage`
+* Create a image loader class extend `ImageLoader` and implement `loadImage`
 ```android
 private class GlideImageLoader extends ImageLoader {
         @Override
@@ -34,7 +34,7 @@ private class GlideImageLoader extends ImageLoader {
 }
 ```
 **PS:** make sure to call `onResourceReady` when the image bitmap is ready
-2. Add `ImageCarouselView` into your layout XML
+* Add `ImageCarouselView` into your layout XML
 ```xml
 <com.f3401pal.imagecarouselview.ImageCarouselView
         android:id="@+id/carouselView"
@@ -42,7 +42,7 @@ private class GlideImageLoader extends ImageLoader {
         android:layout_height="wrap_content"
         />
 ```
-3. Set the image URLs and a instance of your image loader in `ImageCarouselView`
+* Set the image URLs and a instance of your image loader in `ImageCarouselView`
 ```android
 carouselView.setImageUrls(URLs, new GlideImageLoader());
 ```
