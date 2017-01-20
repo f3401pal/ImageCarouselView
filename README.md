@@ -10,11 +10,11 @@ Custom image carousel view for Android. Support featrures:
 
 # Limitations
 * Only support horizontal scroll
-* Manual scroll does not work smoothly inside `NestedScrollView`
 * Only support images from URL
+* Manual scroll does not work smoothly inside `NestedScrollView`
 
 # QuickStart
-This is a example of using Glide as image loader. See the example app for more details.
+This is a example of using Glide as image loader. See the [example app](https://github.com/f3401pal/ImageCarouselView/tree/master/example) for more details.
 * Create a image loader class extend `ImageLoader` and implement `loadImage`
 ```android
 private class GlideImageLoader extends ImageLoader {
@@ -34,6 +34,7 @@ private class GlideImageLoader extends ImageLoader {
 }
 ```
 **PS:** make sure to call `onResourceReady` when the image bitmap is ready
+
 * Add `ImageCarouselView` into your layout XML
 ```xml
 <com.f3401pal.imagecarouselview.ImageCarouselView
@@ -42,7 +43,9 @@ private class GlideImageLoader extends ImageLoader {
         android:layout_height="wrap_content"
         />
 ```
+
 * Set the image URLs and a instance of your image loader in `ImageCarouselView`
 ```android
+ImageCarouselView carouselView = (ImageCarouselView) findViewById(R.id.carouselView);
 carouselView.setImageUrls(URLs, new GlideImageLoader());
 ```
