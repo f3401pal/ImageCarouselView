@@ -25,7 +25,7 @@ import static android.view.MotionEvent.ACTION_UP;
 public class ImageCarouselView extends View {
     private static final String TAG = ImageCarouselView.class.getSimpleName();
 
-    private static final boolean AUTO_SCROLL = false;
+    private static final boolean AUTO_SCROLL = true;
     private static final DIRECTION AUTO_SCROLL_DIRECTION = DIRECTION.RIGHT;
 
     private static final long ANIMATION_DELAY = 3000;
